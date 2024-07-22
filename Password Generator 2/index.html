@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pass Gen</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <label for="" class="labelPss">Password Generator</label>
+      <div class="content">
+        <input type="text" id="inputBox" disabled/>
+        <i class="fa-solid fa-rotate" id="passG"></i>
+      </div>
+      <button id="copyBtn"><i class="fa-regular fa-copy"></i>Copy Password</button>
+
+      <div class="check">
+        <div>
+          <input type="checkbox" name="uppercase" id="uppercase" />
+          <label for="uppercase">Uppercase letters</label>
+
+          <input type="checkbox" name="lowercase" id="lowercase" />
+          <label for="lowercase">Lowercase letters</label>
+        </div>
+        <div>
+          <input type="checkbox" name="number" id="number" />
+          <label for="number">Numbers</label>
+
+          <input type="checkbox" name="symbols" id="symbols" />
+          <label for="symbols">Symbols</label>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html> 
+
+

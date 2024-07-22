@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  height: 91.7vh;
+  background: linear-gradient(304deg, #8f8f8f, #060404);
+}
+.container {
+  margin: 5vw auto;
+  width: 25%;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px white;
+  padding: 10px 0px;
+}
+h2 {
+  color: #fff;
+}
+.container .flexImg {
+  margin: 45px 0px;
+  display: flex;
+  overflow: hidden;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.container .flexImg img {
+  border-radius: 30px;
+  margin: 0px 10px;
+  cursor: pointer;
+  width: 70%;
+  height: 35vh;
+}
+
+.container div .imgText .title {
+  font-size: 1.3rem;
+  margin: 6px 0px;
+  color: #161414;
+}
+.container div .imgText .songWriter {
+  font-size: 0.95rem;
+  color: #e7c9c9;
+}
+.scole {
+  position: relative;
+}
+.pad {
+  padding: 15px 0px;
+}
+
+#slideBar {
+  width: 95%;
+  height: 5px;
+  background: white;
+  border-radius: 10px;
+  position: absolute;
+  margin: 5px;
+  cursor: pointer;
+}
+.circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 13px;
+  position: relative;
+  bottom: 6px;
+  background-color: white;
+  transition: left 1s;
+  left: 0%;
+}
+
+.slideValue {
+  display: flex;
+  padding: 10px 0px;
+  width: 80%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  color: #fff;
+}
+.slideValue p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.songIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.songIcon img {
+  cursor: pointer;
+}
+#play {
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  text-align: center;
+  background: #a19797;
+  transition: all 0.3s;
+}
+
+#play:hover {
+  background: #b4a2a2;
+}

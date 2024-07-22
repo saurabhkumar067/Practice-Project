@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Expense Tracker</h2>
+      <div class="itemA">
+        <label for="name"
+          >Item Name:
+          <input
+            type="text"
+            placeholder="Enter item name"
+            id="name"
+            class="name"
+          />
+        </label>
+      </div>
+      <div class="itemA">
+        <label for="amount"
+          >Item Amount:
+          <input
+            type="text"
+            placeholder="Enter item amount"
+            id="amount"
+            class="amount"
+          />
+        </label>
+      </div>
+      <div class="btn1">
+        <button class="btn add">Add Item</button>
+        <button class="btn clear">Clear All</button>
+      </div>
+      <div class="storeCont">
+        <div id="store">
+          <!-- <div class="itemName"> 
+          <span class="itemPrice"></span>
+        </div> -->
+        </div>
+        <div class="totalPrice"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

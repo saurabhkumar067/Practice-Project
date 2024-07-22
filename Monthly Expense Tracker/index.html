@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monthly Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>MONTHLY EXPENSE TACKER</h2>
+      <div class="amount">
+        <div>
+          <p class="clr">Monthly Income</p>
+          <p id="monthlyIncome">$ 00</p>
+        </div>
+        <div>
+          <p class="clr1">Monthly Expense</p>
+          <p id="monthlyExpense">$ 00</p>
+        </div>
+        <div class="line"></div>
+        <div>
+          <p class="clr2">Balance</p>
+          <p id="totalBalance">$ 00</p>
+        </div>
+      </div>
+      <hr />
+      <div class="inputs-box">
+        <h2>ADD NEW</h2>
+        <div class="flex">
+        <div>
+          <input type="radio" name="transaction" id="expense" />
+          <label for="expense">Expense</label>
+        </div>
+        <div>
+          <input type="radio" name="transaction" id="income" />
+          <label for="income">Income</label>
+        </div>
+        </div>
+        <input type="number" id="inputBox" />
+        <button id="addBtn">Add</button>
+      </div>
+      
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colour Flipper</title>
+    <style>
+      body {
+        background: gray;
+        transition: background-color 0.3s;
+      
+      }
+      .container {
+        /* border: 1px solid black; */
+        width: 40%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -100%;
+        text-align: center;
+        background: #fff;
+        box-shadow: 0px 0px 50px black;
+        border-radius: 10px;
+      }
+      #new-colour-button {
+        width: 35%;
+        height: 50px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        cursor: pointer;
+        color: #fff;
+        background-color: gray;
+        border: none;
+      }
+      #current-colour {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Background: <span id="current-colour">#fffff</span></h1>
+      <button id="new-colour-button">New Colour!</button>
+    </div>
+
+    <script>
+      const currentColour = document.querySelector('#current-colour')
+      const btnColor = document.querySelector('#new-colour-button')
+
+
+      function randomColor(){
+        let hexNumber = ['1','2','3','4','5','6','7','8','9','A','B','C','D','E','F'];
+        let hexRandom = '';
+
+        for (let i = 0; i < 6; i++) {
+         const random = Math.floor(Math.random()* hexNumber.length)
+         hexRandom += hexNumber[random];
+          
+        }
+        const text = document.querySelector('body').style.background = '#' + hexRandom
+        currentColour.innerHTML = text;
+
+      }
+
+
+      btnColor.addEventListener('click',(e)=> {
+        randomColor()
+      })
+
+    </script>
+  </body>
+</html>
